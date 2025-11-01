@@ -1,0 +1,10 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [0.1181, 52.2054]
+  },
+  "properties": {
+    "name": "Cambridge UK"
+  }
+}

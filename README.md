@@ -6,8 +6,20 @@ On a whim I've decided to do the [30 Day Map Challenge](https://30daymapchalleng
 To learn I'm going to be reading
 [Python for Geographic Data Analysis](https://pythongis.org/).
 
+Resources:
+
+- The [GeoJson Specification](https://geojson.org/)
+- [Project Pythia](https://foundations.projectpythia.org/)
+
 Below are details of the what I have done and learnt.
 
+- Day 1: Points
+  Created a GeoJson file with the coordinates of Cambridge.
+  Read in using `shapely` and plotted using `cartopy`.
+    - Cartopy projection and transform are
+      [not the same](https://cartopy.readthedocs.io/stable/tutorials/understanding_transform.html)
+    - Points are `(x, y) -> (lon, lat)`
+  
 
 ## Usage
 
