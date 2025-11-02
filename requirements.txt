@@ -1,4 +1,6 @@
 shapely
 matplotlib
 cartopy
+antimeridian
+scipy
 ruff

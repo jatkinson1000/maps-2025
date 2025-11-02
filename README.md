@@ -13,13 +13,23 @@ Resources:
 
 Below are details of the what I have done and learnt.
 
-- Day 1: Points
+- Day 1: Points\
   Created a GeoJson file with the coordinates of Cambridge.
   Read in using `shapely` and plotted using `cartopy`.
     - Cartopy projection and transform are
       [not the same](https://cartopy.readthedocs.io/stable/tutorials/understanding_transform.html)
     - Points are `(x, y) -> (lon, lat)`
-  
+- Day 2: Lines\
+  Plotted the (crow's) route from Jules Verne's round the world in 80 days.
+  Read in as MultiPoint and converted using `shapely`, and plotted using `cartopy`.
+    - Antimeridian splitting is a challenge - used the
+      [antimeridian](https://github.com/gadomski/antimeridian) package.
+    - Played with a projection options for too long and cartopy now makes it   easy to add a stock image.
+
+Notes for later:
+
+- [elevatr](https://github.com/titouanlegourrierec/elevatr) for terrain maps?
+
 
 ## Usage
 
