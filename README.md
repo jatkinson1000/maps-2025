@@ -25,6 +25,13 @@ Below are details of the what I have done and learnt.
     - Antimeridian splitting is a challenge - used the
       [antimeridian](https://github.com/gadomski/antimeridian) package.
     - Played with a projection options for too long and cartopy now makes it   easy to add a stock image.
+- Day 3: Polygons\
+  Obtained [real data of UK borders](https://geoportal.statistics.gov.uk/datasets/ons::countries-december-2024-boundaries-uk-bfc-2/about),
+  converted to km, obtained some data using shapely and plotted.
+    - Decided to try and get some real data from [UK ONS](https://geoportal.statistics.gov.uk/) - UK country boundaries.
+    - Used Shapely to get perimeter, area, and centroid.
+    - Had to use Proj (OMG, real GIS!!) to convert from lat-lon to km based on
+      [EPSG Parameters Sets](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)
 
 Notes for later:
 
