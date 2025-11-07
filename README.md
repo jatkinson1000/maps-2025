@@ -32,6 +32,19 @@ Below are details of the what I have done and learnt.
     - Used Shapely to get perimeter, area, and centroid.
     - Had to use Proj (OMG, real GIS!!) to convert from lat-lon to km based on
       [EPSG Parameters Sets](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)
+      see also [spatialreference.org](https://spatialreference.org/)
+- Day 7: Accessibility\
+  Obtained [UK canals in GeoJSON](https://data-canalrivertrust.opendata.arcgis.com/datasets/f3c249d59f0b464d8b09d25e39305a99_4/explore)
+  and plotted along with [cities over 200,000](https://simplemaps.com/data/gb-cities).
+    - A long-held belief of mine is that canals in the UK are greatly
+      under-utilised and we should move more this way instead of by road.
+      Plotting shows this is perhaps due to growing up in the Midlands
+      where they are most prevalent. Scotland or the South are largely
+      inaccessible via canal. Historically this makes sense as we see
+      connections run between industrial centres with a stretch down to
+      London.
+    - Used Shapely to estimate the longest canal to be the Grand Union
+      at 210.7km (wikipedia says 220km).
 
 Notes for later:
 
