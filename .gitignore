@@ -1,3 +1,7 @@
+# System and undesirable files
+**/.DS_Store
+**/*.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
