@@ -4,3 +4,4 @@ cartopy
 antimeridian
 scipy
 ruff
+osmnx

@@ -13,19 +13,19 @@ Resources:
 
 Below are details of the what I have done and learnt.
 
-- Day 1: Points\
+- Day 1: [Points](day1_points)\
   Created a GeoJson file with the coordinates of Cambridge.
   Read in using `shapely` and plotted using `cartopy`.
     - Cartopy projection and transform are
       [not the same](https://cartopy.readthedocs.io/stable/tutorials/understanding_transform.html)
     - Points are `(x, y) -> (lon, lat)`
-- Day 2: Lines\
+- Day 2: [Lines](day2_lines)\
   Plotted the (crow's) route from Jules Verne's round the world in 80 days.
   Read in as MultiPoint and converted using `shapely`, and plotted using `cartopy`.
     - Antimeridian splitting is a challenge - used the
       [antimeridian](https://github.com/gadomski/antimeridian) package.
     - Played with a projection options for too long and cartopy now makes it   easy to add a stock image.
-- Day 3: Polygons\
+- Day 3: [Polygons](day3_polygons)\
   Obtained [real data of UK borders](https://geoportal.statistics.gov.uk/datasets/ons::countries-december-2024-boundaries-uk-bfc-2/about),
   converted to km, obtained some data using shapely and plotted.
     - Decided to try and get some real data from [UK ONS](https://geoportal.statistics.gov.uk/) - UK country boundaries.
@@ -33,7 +33,7 @@ Below are details of the what I have done and learnt.
     - Had to use Proj (OMG, real GIS!!) to convert from lat-lon to km based on
       [EPSG Parameters Sets](https://en.wikipedia.org/wiki/EPSG_Geodetic_Parameter_Dataset)
       see also [spatialreference.org](https://spatialreference.org/)
-- Day 7: Accessibility\
+- Day 7: [Accessibility](day7_accessibility)\
   Obtained [UK canals in GeoJSON](https://data-canalrivertrust.opendata.arcgis.com/datasets/f3c249d59f0b464d8b09d25e39305a99_4/explore)
   and plotted along with [cities over 200,000](https://simplemaps.com/data/gb-cities).
     - A long-held belief of mine is that canals in the UK are greatly
@@ -45,6 +45,19 @@ Below are details of the what I have done and learnt.
       London.
     - Used Shapely to estimate the longest canal to be the Grand Union
       at 210.7km (wikipedia says 220km).
+- Day 8: [Urban](day8_urban)\
+  Decided to dip my toes into OpenStreetMap data. Wow, I've been sleeping on this!
+  OSM is great, and I'm going to try switching as much as I can in a de-Goofling \[sic\]
+  effort. Plotted roads in the centre of Cambridge.
+    - Fetched data from [OpenStreetMap](https://www.openstreetmap.org/#map=15/52.20131/0.12561&layers=C)
+      and processes using [OSMnx](https://osmnx.readthedocs.io/en/stable/index.html)
+      which wraps [NetworkX](https://networkx.org/documentation/stable/index.html)
+      for graph analysis.
+    - Mostly following OSMnx tutorial [here](https://github.com/gboeing/osmnx-examples/blob/main/notebooks/00-osmnx-features-demo.ipynb).
+    - Generate graph of central Cambridge for both driving and cycling.
+      Heatmap of edges indicates how close points are to every other location
+      on the map (edge centrality). There are noticeably more connections
+      and a noticeably brighter centre to the cycling map.
 
 Notes for later:
 
